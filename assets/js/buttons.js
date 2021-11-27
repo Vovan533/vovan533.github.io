@@ -1,7 +1,15 @@
 var main_html = `
 <section id='main_map'>
       <h2> Карта событий</h2>
-      <div class="interactive_map" id="main_map"></div>
+      <div class="interactive_map">
+        <div class="map_img" id="main_map"></div>
+        <div class="map_years_box">
+          <a class="interactive_map_year_button" id='main_1917'>1917</a>
+          <a class="interactive_map_year_button" id='main_1918'>1918</a>
+          <a class="interactive_map_year_button" id='main_1919'>1919</a>
+          <a class="interactive_map_year_button" id='main_1920'>1920</a>
+        </div>
+      </div>
 </section>
 
 <section id='war'>
