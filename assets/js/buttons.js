@@ -59,13 +59,23 @@ var info_html = `
 </section>
 `
 var actions_html = `
-
+<section id='generals'>
+    <h2> Генералы</h2>
+    <p>Не очень много текста о генералах...</p>
+    <p>Не очень много текста о генералах...</p>
+    <a id="generals" href="generals.html">Перейти на страницу с генералами</a>
+</section>
 `
 var generals_html = `
-
+<section id='actions'>
+    <h2> События</h2>
+    <p>Не очень много текста о событиях...</p>
+    <p>Не очень много текста о событиях...</p>
+    <a id="actions" href="actions.html">Перейти на страницу с событиями</a>
+</section>
 `
 
-document.getElementById("info").onclick = function(){
+function load_info(){
     document.getElementById("wr").innerHTML = info_html;
     button = document.getElementsByClassName("header_button_active")[0]
     button.classList.add("header_button")
@@ -75,7 +85,7 @@ document.getElementById("info").onclick = function(){
     f_button.classList.remove("header_button")
 };
 
-document.getElementById("home").onclick = function(){
+function load_main(){
     document.getElementById("wr").innerHTML = main_html;
     button = document.getElementsByClassName("header_button_active")[0]
     button.classList.add("header_button")
@@ -84,3 +94,19 @@ document.getElementById("home").onclick = function(){
     f_button.classList.add("header_button_active")
     f_button.classList.remove("header_button")
 };
+
+function load_actions(){
+    document.getElementById("wr").innerHTML = actions_html;
+    button = document.getElementsByClassName("header_button_active")[0]
+    button.classList.add("header_button")
+    button.classList.remove("header_button_active")
+    f_button = document.getElementById("actions")
+    f_button.classList.add("header_button_active")
+    f_button.classList.remove("header_button")
+};
+
+document.getElementById("info").onclick = load_info();
+
+document.getElementById("home").onclick = load_main();
+
+document.getElementById("actions_href").onclick = load_actions();
