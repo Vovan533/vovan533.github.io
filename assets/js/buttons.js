@@ -140,11 +140,16 @@ var y1920_html = `
 
 var cur_year = y1917_html;
 
+function hasClass(elem, className) {
+    return elem.classList.contains(className);
+}
 
-function update(selector) {
-    var newdoc = new DOMParser().parseFromString(start_block_html + cur_year + main_html, 'text/html');
-    document.querySelector(selector).outerHTML = newdoc.querySelector(selector).outerHTML;
-};
+function hasId(element){
+    res = typeof element.id != 'undefined';
+    console.log(res);
+    return res;
+}
+
 
 function load_info(){
     document.getElementById("wr").innerHTML = start_block_html + info_html;
@@ -180,7 +185,6 @@ function load_generals(){
 };
 
 function load_main(){
-    alert("load_main")
     old_c = document.getElementById("wr");
     new_c = document.createElement("div");
     new_c.classList.add('wrapper');
@@ -194,79 +198,49 @@ function load_main(){
     f_button = document.getElementById("home");
     f_button.classList.add("header_button_active");
     f_button.classList.remove("header_button");
-    return false;
 };
 
-// nav buttons
 
-document.getElementById("info").onclick = load_info;
 
-document.getElementById("home").onclick = load_main;
-
-document.getElementById("actions").onclick = load_actions;
-
-document.getElementById("generals").onclick = load_generals;
-
-// section href buttons
-
-document.getElementById("actions_href").onclick = load_actions;
-
-document.getElementById("generals_href").onclick = load_generals;
-
-// map year buttons
-var b1917 = document.getElementById("main_1917");
-var b1918 = document.getElementById("main_1918");
-var b1919 = document.getElementById("main_1919");
-var b1920 = document.getElementById("main_1920");
-
-function detect_buttons(){
-    b1917 = document.getElementById("main_1917");
-    b1918 = document.getElementById("main_1918");
-    b1919 = document.getElementById("main_1919");
-    b1920 = document.getElementById("main_1920");
-};
-
-b1917.onclick = function(){
-    alert('1917')
+function load_map(element, year) {
     let old_active = document.getElementsByClassName("interactive_map_year_button_active")[0];
     old_active.classList.add("interactive_map_year_button");
     old_active.classList.remove("interactive_map_year_button_active")
-    b1917.classList.add("interactive_map_year_button_active");
-    b1917.classList.remove("interactive_map_year_button");
-    cur_year = y1917_html;
-    load_main();
-    detect_buttons();
-};
+    element.classList.add("interactive_map_year_button_active");
+    element.classList.remove("interactive_map_year_button");
+    cur_year = year;
+    $('#wr').html(start_block_html + cur_year + main_html);
+    document.getElementById("scrool_to").scrollIntoView();
+}
 
-b1918.onclick = function(){
-    let old_active = document.getElementsByClassName("interactive_map_year_button_active")[0];
-    old_active.classList.add("interactive_map_year_button");
-    old_active.classList.remove("interactive_map_year_button_active")
-    b1918.classList.add("interactive_map_year_button_active");
-    b1918.classList.remove("interactive_map_year_button");
-    cur_year = y1918_html;
-    load_main();
-    detect_buttons();
-};
+// buttons listener
 
-document.getElementById("main_1919").onclick = function load_y1917(){
-    let old_active = document.getElementsByClassName("interactive_map_year_button_active")[0];
-    old_active.classList.add("interactive_map_year_button");
-    old_active.classList.remove("interactive_map_year_button_active")
-    b1919.classList.add("interactive_map_year_button_active");
-    b1919.classList.remove("interactive_map_year_button");
-    cur_year = y1919_html;
-    load_main();
-    detect_buttons();
-};
-
-document.getElementById("main_1920").onclick = function load_y1917(){
-    let old_active = document.getElementsByClassName("interactive_map_year_button_active")[0];
-    old_active.classList.add("interactive_map_year_button");
-    old_active.classList.remove("interactive_map_year_button_active")
-    b1920.classList.add("interactive_map_year_button_active");
-    b1920.classList.remove("interactive_map_year_button");
-    cur_year = y1920_html;
-    load_main();
-    detect_buttons();
-};
+document.addEventListener('click', function(e) {
+    // nav buttons
+    if (e.target.id == 'info') {
+        console.log('clicked btn with id info')
+        load_info();
+    } else if (e.target.id == 'home') {
+        load_main();
+    } else if (e.target.id == 'actions') {
+        load_actions();
+    } else if (e.target.id == 'generals') {
+        load_generals();
+    }
+    // section href buttons
+    else if (e.target.id == 'actions_href') {
+        load_actions();
+    } else if (e.target.id == 'generals_href') {
+        load_generals();
+    }
+    // map year buttons
+    else if (e.target.id == 'main_1917') {
+        load_map(e.target, y1917_html);
+    } else if (e.target.id == 'main_1918') {
+        load_map(e.target, y1918_html);
+    } else if (e.target.id == 'main_1919') {
+        load_map(e.target, y1919_html);
+    } else if (e.target.id == 'main_1920') {
+        load_map(e.target, y1920_html);
+    }
+}, false);
