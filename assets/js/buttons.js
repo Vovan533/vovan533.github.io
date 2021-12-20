@@ -270,7 +270,6 @@ function setup_svg_listener(){
         var a = document.getElementById("arrows_svg_1917");
     
         //get the inner DOM of alpha.svg
-        alert(a.innerHTML)
         var svgDoc = a.contentDocument;
     
         //get the inner element by id
