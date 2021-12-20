@@ -356,8 +356,7 @@ section a:hover {
 }
 
 /* map arrows */
-path :hover{
-  fill: #00ADB5;
+.arrows_svg :hover{
   cursor: pointer;
 }
 
