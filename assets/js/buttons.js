@@ -50,12 +50,22 @@ var info_html = `
 </section>
 `
 var generals_html = `
-<section>
-    <h2> Генерал 1</h2>
-    <p>Не очень много текста о генерале 1...</p>
-    <p>Не очень много текста о генерале 1...</p>
-    <p>Не очень много текста о генерале 1...</p>
+<div class="general_div">
+<section class ='general_short_info_section'>
+    <img align='top' id='general_photo' src='https://upload.wikimedia.org/wikipedia/commons/1/1f/%D0%9B%D0%B5%D0%B2_%D0%94%D0%B0%D0%B2%D0%B8%D0%B4%D0%BE%D0%B2%D0%B8%D1%87_%D0%A2%D1%80%D0%BE%D1%86%D0%BA%D0%B8%D0%B9.jpg'>
+    <p>Text</p>
 </section>
+<section class='general_info_section'>
+    <h2>Лев Давидович Троцкий <img id='img_flag' src='assets/img/flag_rsfsr.png'></h2>
+    <p>Не очень много текста о нем...</p>
+    <p>Не очень много текста о нем...</p>
+    <p>Не очень много текста о нем...</p>
+    <p>Не очень много текста о нем...</p>
+    <p>Не очень много текста о нем...</p>
+    <p>Не очень много текста о нем...</p>
+    <a target="_blank" rel="noopener noreferrer" href='https://ru.wikipedia.org/wiki/%D0%A2%D1%80%D0%BE%D1%86%D0%BA%D0%B8%D0%B9,_%D0%9B%D0%B5%D0%B2_%D0%94%D0%B0%D0%B2%D0%B8%D0%B4%D0%BE%D0%B2%D0%B8%D1%87'>Открыть на википедии</a>
+</section>
+</div>
 <section>
     <h2> Генерал 2</h2>
     <p>Не очень много текста о генерале 2...</p>
@@ -82,7 +92,7 @@ var y1917_html = `
 <section class="map_section" id='main_map'>
       <h2> Карта событий</h2>
       <div class="interactive_map">
-        <div class="map_img" id="map1917"></div>
+        <div class="map_img" id="map1917"><object class="arrows_svg" id="arrows_svg_1917" data="./assets/img/test_year_map.svg" type="image/svg+xml"></object></div>
         <div class="map_years_box">
           <a class="interactive_map_year_button_active" id='main_1917'>1917</a>
           <a class="interactive_map_year_button" id='main_1918'>1918</a>
@@ -127,7 +137,7 @@ var y1920_html = `
 <section class="map_section" id='main_map'>
       <h2> Карта событий</h2>
       <div class="interactive_map">
-        <div class="map_img" id="map192o"></div>
+        <div class="map_img" id="map1920"></div>
         <div class="map_years_box">
           <a class="interactive_map_year_button" id='main_1917'>1917</a>
           <a class="interactive_map_year_button" id='main_1918'>1918</a>
@@ -144,14 +154,14 @@ function hasClass(elem, className) {
     return elem.classList.contains(className);
 }
 
-function hasId(element){
+function hasId(element) {
     res = typeof element.id != 'undefined';
     console.log(res);
     return res;
 }
 
 
-function load_info(){
+function load_info() {
     document.getElementById("wr").innerHTML = start_block_html + info_html;
     document.getElementById("scrool_to").scrollIntoView();
     button = document.getElementsByClassName("header_button_active")[0]
@@ -162,7 +172,7 @@ function load_info(){
     f_button.classList.remove("header_button")
 };
 
-function load_actions(){
+function load_actions() {
     document.getElementById("wr").innerHTML = start_block_html + actions_html;
     document.getElementById("scrool_to").scrollIntoView();
     button = document.getElementsByClassName("header_button_active")[0]
@@ -173,7 +183,7 @@ function load_actions(){
     f_button.classList.remove("header_button")
 };
 
-function load_generals(){
+function load_generals() {
     document.getElementById("wr").innerHTML = start_block_html + generals_html;
     document.getElementById("scrool_to").scrollIntoView();
     button = document.getElementsByClassName("header_button_active")[0]
@@ -184,7 +194,7 @@ function load_generals(){
     f_button.classList.remove("header_button")
 };
 
-function load_main(){
+function load_main() {
     old_c = document.getElementById("wr");
     new_c = document.createElement("div");
     new_c.classList.add('wrapper');
@@ -198,6 +208,7 @@ function load_main(){
     f_button = document.getElementById("home");
     f_button.classList.add("header_button_active");
     f_button.classList.remove("header_button");
+    setup_svg_listener();
 };
 
 
@@ -211,11 +222,13 @@ function load_map(element, year) {
     cur_year = year;
     $('#wr').html(start_block_html + cur_year + main_html);
     document.getElementById("scrool_to").scrollIntoView();
-}
+    setup_svg_listener();
+};
+
 
 // buttons listener
 
-document.addEventListener('click', function(e) {
+document.addEventListener('click', function (e) {
     // nav buttons
     if (e.target.id == 'info') {
         console.log('clicked btn with id info')
@@ -243,4 +256,24 @@ document.addEventListener('click', function(e) {
     } else if (e.target.id == 'main_1920') {
         load_map(e.target, y1920_html);
     }
+    // map_arrows
+    else if (e.target.id == 'arrows_svg_1917') {
+        alert('arr')
+    }
 }, false);
+
+setup_svg_listener();
+
+function setup_svg_listener(){
+
+        //alert("Document loaded, including graphics and embedded documents (like SVG)");
+        var a = document.getElementById("arrows_svg_1917");
+    
+        //get the inner DOM of alpha.svg
+        alert(a.innerHTML)
+        var svgDoc = a.contentDocument;
+    
+        //get the inner element by id
+        var delta = svgDoc.getElementById("arrow_1917_1");
+        delta.addEventListener("mousedown", function(){ alert('hello world!')}, false);   
+};

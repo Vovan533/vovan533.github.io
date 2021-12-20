@@ -89,7 +89,7 @@ header {
   -o-transition: all 0.5s ease;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
-  z-index: 100;
+  z-index: 300;
 }
 header h1 {
   font-family: Arial, Helvetica, sans-serif;
@@ -105,11 +105,11 @@ header h1 {
   transition: all 0.3s ease;
 }
 header nav {
-  font-size: 1.2vw;
+  font-size: 1.4vw;
   position: absolute;
   bottom: 0;
   height: 6vh;
-  line-height: 60px;
+  line-height: 6vh;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.85);
 }
@@ -159,10 +159,10 @@ p {
 }
 
 section {
-  font-size: 1vw;
-  padding: 20px;
-  margin-top: 40px;
-  margin-bottom: 40px;
+  font-size: 1.5vw;
+  padding: 2vh;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
   background-color: #393e46d5;
   /* background: url("../img/bg.jpg") top no-repeat; */
   -moz-border-radius: 4px;
@@ -171,6 +171,21 @@ section {
   -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
   -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+}
+
+section h2{
+  font-size: 2.5vw;
+}
+section h3{
+  font-size: 2vw;
+}
+
+section p{
+  max-width: 95%;
+  overflow: hidden;
+  display: -webkit-box;
+  /*-webkit-line-clamp: 3;*/
+  -webkit-box-orient: vertical;
 }
 
 section a {
@@ -201,20 +216,81 @@ section a:hover {
   box-shadow: 0 0 0 0px #00ADB5;
 }
 
+/* Generals styles */
+/* ---------------------------------------- */
+#img_flag {
+  width: 2.5vw;
+  height: 1.5vw;
+  background-size: contain;
+  border-color: rgba(0, 0, 0, 0);
+}
+
+#general_photo {
+  width: auto;
+  height: 40vh;
+  background-size: contain;
+  border-color: rgba(0, 0, 0, 0);
+}
+
+.general_div {
+  display: flex;
+  align-items: top;
+}
+
+.general_short_info_section {
+  order: 2;
+  flex-grow: 1;
+  height: 100%;
+  max-height: 50vh;
+  margin-left: 1vw;
+  align-items: center;
+}
+
+.general_short_info_section p {
+  max-width: 95%;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+}
+
+.general_info_section {
+  order: 1;
+  flex-grow: 4;
+  height: 100%;
+}
+
 /* Interactive map styles */
 /* ---------------------------------------- */
 .map_section {
   text-align: center;
 }
 
+.map_section h2{
+  margin-bottom: -5%;
+}
+
+.interactive_map {
+  width: 120%;
+  height: auto;
+  margin-left: -10%;
+}
+
 .map_img {
   position: relative;
   max-width: 100%;
   max-height: 100%;
+  display: flex;
+  justify-content: center;
 }
 
-#map1917 {
-  background: url("https://pbs.twimg.com/media/EHWkKGzU0AAQ1rT.jpg") center;
+#arrows_svg_1917 {
+  width: 35%;
+  margin-top: -38%;
+  z-index: 80
+}
+
+
+#map1917{
+  background: url("../img/map_template_clouds.png") center;
   background-size: contain;
   background-repeat: no-repeat;
   width: 100%;
@@ -223,7 +299,23 @@ section a:hover {
 }
 
 #map1918 {
-  background: url("http://media1.s-nbcnews.com/j/newscms/2016_11/1464786/160318-rostov-on-don-russia-mn-2250_8117f42147e064104615f0db45afa7ab.nbcnews-ux-2880-1000.jpg") center;
+  background: url("../img/map_template_clouds.png") center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 0;
+  padding-top: 46.64%;
+}
+#map1919 {
+  background: url("../img/map_template_clouds.png") center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 0;
+  padding-top: 46.64%;
+}
+#map1920 {
+  background: url("../img/map_template_clouds.png") center;
   background-size: contain;
   background-repeat: no-repeat;
   width: 100%;
@@ -235,6 +327,7 @@ section a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: -6%;
 }
 
 .map_years_box a{
@@ -250,6 +343,7 @@ section a:hover {
   -webkit-box-shadow: 0 0 0 0px #00ADB5;
   box-shadow: 0 0 0 0px #00ADB5;
   text-align: center;
+  z-index: 100;
 }
 
 .interactive_map_year_button_active {
@@ -259,6 +353,15 @@ section a:hover {
   line-height: 1;
   margin-right: 2.5%;
   margin-left: 2.5%;
+}
+
+/* map arrows */
+.arrows_svg :hover{
+  cursor: pointer;
+}
+
+path {
+  cursor: pointer;
 }
 
 /* action buttons */
