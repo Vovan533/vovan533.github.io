@@ -97,6 +97,16 @@ var generals_html = `
             <p>2 параграф о нем же</p>
         </div>
     </div>
+    <div class='short_general_div'>
+        <div class='short_general_photo'>
+            <img align='right' id='short_general_photo' src='http://history.syktnet.ru/02/01/img/331.jpg'>
+        </div>
+        <div class='short_general_text'>
+            <h3 style='text-align: right; color: #EEEEEE; padding-bottom: 2%'>Богаевский Африкан Петрович</h3>
+            <p>1 параграф о богаевском</p>
+            <p>2 параграф о нем же</p>
+        </div>
+    </div>
 </section>
 `
 var actions_html = `
