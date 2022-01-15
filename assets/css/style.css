@@ -146,6 +146,7 @@ h2 {
   color: #EEEEEE;
 }
 
+
 p {
   margin-bottom: 2rem;
   line-height: 2;
@@ -178,6 +179,8 @@ section h2{
 }
 section h3{
   font-size: 2vw;
+  color: #EEEEEE;
+  padding-bottom: 2%;
 }
 
 section p{
