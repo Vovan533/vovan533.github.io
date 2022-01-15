@@ -56,7 +56,7 @@ var info_html = `
 </section>
 */
 var generals_html = `
-<div class="general_div">
+<div>
 <section>
     <h3 style="color: #eeeeee91">Главнокомандующие</h3>
     <h2>Антон Иванович Деникин</h2>
