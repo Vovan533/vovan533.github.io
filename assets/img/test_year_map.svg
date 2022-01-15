@@ -320,6 +320,7 @@
        id="arrow_1917_3"
        inkscape:label="arrow 3">
       <path
+         class="arrow_1917_3_path"
          id="path3445"
          style="opacity:0.75;stroke-width:0.870676"
          fill="#000000"
@@ -331,6 +332,7 @@
        id="arrow_1917_2"
        inkscape:label="arrow2">
       <path
+         class="arrow_1917_2_path"
          id="path3443"
          style="opacity:0.75;stroke-width:0.870676"
          fill="#000000"

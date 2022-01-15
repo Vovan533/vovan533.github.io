@@ -56,14 +56,21 @@ var generals_html = `
     <p>Text</p>
 </section>
 <section class='general_info_section'>
-    <h2>Лев Давидович Троцкий <img id='img_flag' src='assets/img/flag_rsfsr.png'></h2>
+    <h2>Главнокомандующие</h2>
+    <h2>Антон Иванович Деникин</h2>
     <p>Не очень много текста о нем...</p>
     <p>Не очень много текста о нем...</p>
     <p>Не очень много текста о нем...</p>
     <p>Не очень много текста о нем...</p>
     <p>Не очень много текста о нем...</p>
     <p>Не очень много текста о нем...</p>
-    <a target="_blank" rel="noopener noreferrer" href='https://ru.wikipedia.org/wiki/%D0%A2%D1%80%D0%BE%D1%86%D0%BA%D0%B8%D0%B9,_%D0%9B%D0%B5%D0%B2_%D0%94%D0%B0%D0%B2%D0%B8%D0%B4%D0%BE%D0%B2%D0%B8%D1%87'>Открыть на википедии</a>
+    <h2>Врангель Пётр Николаевич</h2>
+    <p>Не очень много текста о нем...</p>
+    <p>Не очень много текста о нем...</p>
+    <p>Не очень много текста о нем...</p>
+    <p>Не очень много текста о нем...</p>
+    <p>Не очень много текста о нем...</p>
+    <p>Не очень много текста о нем...</p>
 </section>
 </div>
 <section>
@@ -262,17 +269,57 @@ document.addEventListener('click', function (e) {
     }
 }, false);
 
+/*document.addEventListener('mouseenter', function(e) {
+    if (e.target.id == "arrow_1917_1"){
+        alert(1)
+        var svg = document.getElementById("arrows_svg_1917");
+        var svgDoc = svg.contentDocument;
+        var arrow = svgDoc.getElementById("arrow_1917_1");
+        var color = arrow.style.fill
+    }
+}, false);*/
+
 setup_svg_listener();
 
 function setup_svg_listener(){
 
         //alert("Document loaded, including graphics and embedded documents (like SVG)");
-        var a = document.getElementById("arrows_svg_1917");
+        var a1917 = document.getElementById("arrows_svg_1917");
+        var a1918 = document.getElementById("arrows_svg_1918");
+        var a1919 = document.getElementById("arrows_svg_1919");
+        var a1920 = document.getElementById("arrows_svg_1920");
     
         //get the inner DOM of alpha.svg
-        var svgDoc = a.contentDocument;
-    
-        //get the inner element by id
-        var delta = svgDoc.getElementById("arrow_1917_1");
-        delta.addEventListener("mousedown", function(){ alert('hello world!')}, false);   
+        try {
+            var svgDoc = a1917.contentDocument;
+            var ar1917_1 = svgDoc.getElementById("arrow_1917_1");
+            var c1917_1 = ar1917_1.style.fill
+            var ar1917_2 = svgDoc.getElementById("arrow_1917_2");
+            var c1917_2 = ar1917_2.style.fill
+            var ar1917_3 = svgDoc.getElementById("arrow_1917_3");
+            var c1917_3 = ar1917_3.style.fill
+            ar1917_1.addEventListener("mousedown", function(){arrow_pressed('1917_1')}, false);
+            ar1917_1.addEventListener("mouseenter", function(){select_arrow(svgDoc, 'arrow_1917_1_path')}, false);
+            ar1917_1.addEventListener("mouseleave", function(){deselect_arrow(svgDoc, 'arrow_1917_1_path', c1917_1)}, false);
+            ar1917_2.addEventListener("mousedown", function(){arrow_pressed('1917_2')}, false);
+            ar1917_2.addEventListener("mouseenter", function(){select_arrow(svgDoc, 'arrow_1917_2_path')}, false);
+            ar1917_2.addEventListener("mouseleave", function(){deselect_arrow(svgDoc, 'arrow_1917_2_path', c1917_2)}, false);
+            ar1917_3.addEventListener("mousedown", function(){arrow_pressed('1917_3')}, false);
+            ar1917_3.addEventListener("mouseenter", function(){select_arrow(svgDoc, 'arrow_1917_3_path')}, false);
+            ar1917_3.addEventListener("mouseleave", function(){deselect_arrow(svgDoc, 'arrow_1917_3_path', c1917_3)}, false);
+        } finally {}
 };
+
+var select_color = '#00ADB5';
+
+function select_arrow(doc, className) {
+    doc.getElementsByClassName(className)[0].style.fill = select_color;
+}
+
+function deselect_arrow(doc, className, color) {
+    doc.getElementsByClassName(className)[0].style.fill = color;
+}
+
+function arrow_pressed(ar_num){
+    alert(ar_num + ' pressed');
+}
