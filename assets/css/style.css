@@ -233,9 +233,39 @@ section a:hover {
   border-color: rgba(0, 0, 0, 0);
 }
 
+#short_general_photo {
+  width: auto;
+  height: 30vh;
+  background-size: contain;
+  border-color: rgba(0, 0, 0, 0);
+}
+
 .general_div {
   display: flex;
   align-items: top;
+}
+.short_general_div {
+  padding-top: 1%;
+  display: flex;
+  align-items: top;
+}
+
+.short_general_text {
+  order: 2;
+  height: 100%;
+}
+
+.short_general_text p {
+  line-height: 1.2;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+}
+
+.short_general_photo {
+  order: 1;
+  padding-right: 2%;
+  padding-left: 0.2%;
+  height: 100%;
 }
 
 .general_short_info_section {

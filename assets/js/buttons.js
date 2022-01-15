@@ -86,10 +86,17 @@ var generals_html = `
     </div>
 </section>
 <section>
-    <h2> Другие генералы</h2>
-    <p>Не очень много текста о генерале 2...</p>
-    <p>Не очень много текста о генерале 2...</p>
-    <p>Не очень много текста о генерале 2...</p>
+    <h3 style="color: #eeeeee91"> Другие Генералы</h3>
+    <div class='short_general_div'>
+        <div class='short_general_photo'>
+            <img align='right' id='short_general_photo' src='https://upload.wikimedia.org/wikipedia/commons/a/a8/Drozdovsky.jpg'>
+        </div>
+        <div class='short_general_text'>
+            <h3 style='text-align: right; color: #EEEEEE; padding-bottom: 2%'>Дроздовский Михаил Гордеевич</h3>
+            <p>1 параграф о дроздовском</p>
+            <p>2 параграф о нем же</p>
+        </div>
+    </div>
 </section>
 `
 var actions_html = `
