@@ -120,10 +120,21 @@ var generals_html = `
 `
 var actions_html = `
 <section>
-    <h2> Событие 1</h2>
-    <p>Не очень много текста о собитие 1...</p>
-    <p>Не очень много текста о собитие 1...</p>
-    <p>Не очень много текста о собитие 1...</p>
+    <h2 style='text-align: center'> Бои за установление Советской власти на Дону</h2>
+    <div class='action_div'>
+        <div class='history_action'>
+            <h4 style="color: #eeeeee91; padding-bottom: 2%; text-align: center; margin-top: -3%;"> В истории</h4>
+            <p>Не очень много текста о собитие 1 в романе...Не очень много текста о собитие 1 в романе...</p>
+            <p>Не очень много текста о собитие 1...</p>
+            <p>Не очень много текста о собитие 1...</p>
+        </div>
+        <div class='literature_action'>
+            <h4 style="color: #eeeeee91; padding-bottom: 2%; text-align: center; margin-top: -3%;"> В романе</h4>
+            <p>Не очень много текста о собитие 1 в романе...Не очень много текста о собитие 1 в романе...</p>
+            <p>Не очень много текста о собитие 1 в романе...</p>
+            <p>Не очень много текста о собитие 1 в романе...</p>
+        </div>
+    </div>
 </section>
 <section>
     <h2> Событие 2</h2>
@@ -139,7 +150,7 @@ var y1917_html = `
       <div class="interactive_map">
         <div class="map_img" id="map1917"><object class="arrows_svg" id="arrows_svg_1917" data="./assets/img/test_year_map.svg" type="image/svg+xml"></object></div>
         <div class="map_years_box">
-          <a class="interactive_map_year_button_active" id='main_1917'>1917</a>
+          <!-- <a class="interactive_map_year_button_active" id='main_1917'>1917</a> -->
           <a class="interactive_map_year_button" id='main_1918'>1918</a>
           <a class="interactive_map_year_button" id='main_1919'>1919</a>
           <a class="interactive_map_year_button" id='main_1920'>1920</a>
@@ -154,7 +165,7 @@ var y1918_html = `
       <div class="interactive_map">
         <div class="map_img" id="map1918"></div>
         <div class="map_years_box">
-          <a class="interactive_map_year_button" id='main_1917'>1917</a>
+          <!-- <a class="interactive_map_year_button" id='main_1917'>1917</a> -->
           <a class="interactive_map_year_button_active" id='main_1918'>1918</a>
           <a class="interactive_map_year_button" id='main_1919'>1919</a>
           <a class="interactive_map_year_button" id='main_1920'>1920</a>
@@ -169,7 +180,7 @@ var y1919_html = `
       <div class="interactive_map">
         <div class="map_img" id="map1919"></div>
         <div class="map_years_box">
-          <a class="interactive_map_year_button" id='main_1917'>1917</a>
+          <!-- <a class="interactive_map_year_button" id='main_1917'>1917</a> -->
           <a class="interactive_map_year_button" id='main_1918'>1918</a>
           <a class="interactive_map_year_button_active" id='main_1919'>1919</a>
           <a class="interactive_map_year_button" id='main_1920'>1920</a>
@@ -184,7 +195,7 @@ var y1920_html = `
       <div class="interactive_map">
         <div class="map_img" id="map1920"></div>
         <div class="map_years_box">
-          <a class="interactive_map_year_button" id='main_1917'>1917</a>
+          <!-- <a class="interactive_map_year_button" id='main_1917'>1917</a> -->
           <a class="interactive_map_year_button" id='main_1918'>1918</a>
           <a class="interactive_map_year_button" id='main_1919'>1919</a>
           <a class="interactive_map_year_button_active" id='main_1920'>1920</a>
@@ -193,7 +204,7 @@ var y1920_html = `
 </section>
 `
 
-var cur_year = y1917_html;
+var cur_year = y1918_html;
 
 function hasClass(elem, className) {
     return elem.classList.contains(className);
@@ -322,7 +333,8 @@ setup_svg_listener();
 function setup_svg_listener(){
         
         //alert("Document loaded, including graphics and embedded documents (like SVG)");
-        var a1917 = document.getElementById("arrows_svg_1917");
+        var a1917 = document.querySelector('#arrows_svg_1917') //document.getElementById("arrows_svg_1917");
+        console.log(a1917.contentDocument)
         var a1918 = document.getElementById("arrows_svg_1918");
         var a1919 = document.getElementById("arrows_svg_1919");
         var a1920 = document.getElementById("arrows_svg_1920");

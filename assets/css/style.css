@@ -304,6 +304,32 @@ section a:hover {
   height: 100%;
 }
 
+/* Actions styles */
+/* ---------------------------------------- */
+
+.action_div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.2;
+}
+
+.history_action {
+  align-self: flex-start;
+  margin: 1.5%;
+  order: 1;
+  flex-grow: 2;
+  height: 100%;
+}
+
+.literature_action {
+  margin: 1.5%;
+  align-self: flex-end;
+  order: 2;
+  flex-grow: 2;
+  height: 100%;
+}
+
 /* Interactive map styles */
 /* ---------------------------------------- */
 .map_section {
