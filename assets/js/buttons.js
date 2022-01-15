@@ -49,15 +49,18 @@ var info_html = `
     <p>Не очень много текста об источниках...</p>
 </section>
 `
-var generals_html = `
-<div class="general_div">
+/*
 <section class ='general_short_info_section'>
     <img align='top' id='general_photo' src='https://upload.wikimedia.org/wikipedia/commons/1/1f/%D0%9B%D0%B5%D0%B2_%D0%94%D0%B0%D0%B2%D0%B8%D0%B4%D0%BE%D0%B2%D0%B8%D1%87_%D0%A2%D1%80%D0%BE%D1%86%D0%BA%D0%B8%D0%B9.jpg'>
     <p>Text</p>
 </section>
-<section class='general_info_section'>
+*/
+var generals_html = `
+<div class="general_div">
+<section>
     <h3 style="color: #eeeeee91">Главнокомандующие</h3>
     <h2>Антон Иванович Деникин</h2>
+    <img align='top' id='general_photo' src='https://upload.wikimedia.org/wikipedia/commons/1/1f/%D0%9B%D0%B5%D0%B2_%D0%94%D0%B0%D0%B2%D0%B8%D0%B4%D0%BE%D0%B2%D0%B8%D1%87_%D0%A2%D1%80%D0%BE%D1%86%D0%BA%D0%B8%D0%B9.jpg'>
     <p>Не очень много текста о нем...</p>
     <p>Не очень много текста о нем...</p>
     <p>Не очень много текста о нем...</p>
