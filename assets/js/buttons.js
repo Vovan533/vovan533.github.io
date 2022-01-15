@@ -56,7 +56,7 @@ var generals_html = `
     <p>Text</p>
 </section>
 <section class='general_info_section'>
-    <h2>Главнокомандующие</h2>
+    <h3 style="color: #eeeeee91">Главнокомандующие</h3>
     <h2>Антон Иванович Деникин</h2>
     <p>Не очень много текста о нем...</p>
     <p>Не очень много текста о нем...</p>
