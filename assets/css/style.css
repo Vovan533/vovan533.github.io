@@ -186,6 +186,7 @@ section p{
   display: -webkit-box;
   /*-webkit-line-clamp: 3;*/
   -webkit-box-orient: vertical;
+  line-height: 1.2;
 }
 
 section a {
@@ -252,9 +253,17 @@ section a:hover {
   padding-right: 2.5%;
 }
 
-.general_info_section {
+.general_text {
   order: 1;
   flex-grow: 4;
+  height: 100%;
+}
+
+.general_photo {
+  order: 2;
+  padding-right: 2%;
+  padding-left: 2%;
+  flex-grow: 2;
   height: 100%;
 }
 
