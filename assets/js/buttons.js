@@ -112,6 +112,26 @@ var generals_html = `
             <p>2 параграф о нем же</p>
         </div>
     </div>
+    <div class='short_general_div'>
+        <div class='short_general_photo'>
+            <img align='right' id='short_general_photo' src='https://rusk.ru/images/auto/43773.jpg'>
+        </div>
+        <div class='short_general_text'>
+            <h3 style='text-align: right; color: #EEEEEE; padding-bottom: 2%'>Марков Сергей Леонидович</h3>
+            <p>1 параграф о Маркове</p>
+            <p>2 параграф о нем же</p>
+        </div>
+    </div>
+    <div class='short_general_div'>
+        <div class='short_general_photo'>
+            <img align='right' id='short_general_photo' src='https://upload.wikimedia.org/wikipedia/commons/3/3e/Pyotr_Nikolayevich_Krasnov.jpg'>
+        </div>
+        <div class='short_general_text'>
+            <h3 style='text-align: right; color: #EEEEEE; padding-bottom: 2%'>Краснов Пётр Николаевич</h3>
+            <p>1 параграф о Краснове</p>
+            <p>2 параграф о нем же</p>
+        </div>
+    </div>
 </section>
 `
 var actions_html = `

@@ -254,12 +254,13 @@ section a:hover {
 .short_general_div {
   padding-top: 1%;
   display: flex;
-  align-items: top;
+  align-items: flex-start;
 }
 
 .short_general_text {
   order: 2;
   height: 100%;
+  max-width: 65%;
 }
 
 .short_general_text p {
@@ -273,6 +274,7 @@ section a:hover {
   padding-right: 2%;
   padding-left: 0.2%;
   height: 100%;
+  max-width: 30%;
 }
 
 .general_short_info_section {
