@@ -73,7 +73,7 @@ var generals_html = `
     <h2> Антон Иванович Деникин</h2>
     <div class='general_div'>
         <div class='general_photo'>
-            <img align='right' id='general_photo' src='https://upload.wikimedia.org/wikipedia/commons/2/26/Anton_Denikin_1918-1919.jpg'>
+            <img align='right' id='general_photo' src='./assets/img/generals/Denikin.jpg'>
         </div>
         <div class='general_text'>
             <p>Родился в 1872 под Варшавой, в семье разночинцев(что отличало его от других членов высшего командного состава белой армии). В 1892 поступил в Киевское пехотное юнкерское училище получил звание лейтенанта. До Р-Я войны служил в разных частях штабным офицером. Во время Р-Я войны воевал в Маньчжурии, дослужился до звания полковника. В 1914 году в звании Генерал-лейтенанта принял командования “Железной дивизии”. Действовал крайне удачно. В 1916 году спасал Румынию от разгрома. Революцию 1917 года поддержал, однако был разочарован новыми властями России, после провала заговора Корнилова был арестова, но смог бежать во время октябрьской революции, и примкнул к Корнилову, после его смерти возглавил добровольческую армию. В 1919 году добровольческая армия Корнилова и Донские силы объединились в ВСЮР. Благодаря его(и других белых генералов) умелому командованию удалось добиться максимального приближения к Москве. Однако несмотря на военную гениальность, он не сумел удержать тыл стабильным, что привело к разгрому интендантства и отступление назад к Дону. Разлагающаяся армия, популярность Деникина, а также провал эвакуации из Новороссийска, привели к тому, что Деникин передал ВСЮР Врангелю, а сам Эмигрировал в Англию. Помогал эмигрантам, и один из немногих деятелей белого движения, кто наотрез отказался помогать нацистам, во времена ВОВ.</p>
@@ -94,7 +94,7 @@ var generals_html = `
     <h3 style="color: #eeeeee91"> Другие Генералы</h3>
     <div class='short_general_div'>
         <div class='short_general_photo'>
-            <img align='right' id='short_general_photo' src='https://upload.wikimedia.org/wikipedia/commons/a/a8/Drozdovsky.jpg'>
+            <img align='right' id='short_general_photo' src='./assets/img/generals/PolcovnikDrozdovskiy.jpg'>
         </div>
         <div class='short_general_text'>
             <h3 style='text-align: right; color: #EEEEEE; padding-bottom: 2%'>Дроздовский Михаил Гордеевич</h3>
@@ -104,7 +104,7 @@ var generals_html = `
     </div>
     <div class='short_general_div'>
         <div class='short_general_photo'>
-            <img align='right' id='short_general_photo' src='http://history.syktnet.ru/02/01/img/331.jpg'>
+            <img align='right' id='short_general_photo' src='./assets/img/generals/Bogaevsky.jpg'>
         </div>
         <div class='short_general_text'>
             <h3 style='text-align: right; color: #EEEEEE; padding-bottom: 2%'>Богаевский Африкан Петрович</h3>
@@ -114,7 +114,7 @@ var generals_html = `
     </div>
     <div class='short_general_div'>
         <div class='short_general_photo'>
-            <img align='right' id='short_general_photo' src='https://rusk.ru/images/auto/43773.jpg'>
+            <img align='right' id='short_general_photo' src='./assets/img/generals/Markov.jpg'>
         </div>
         <div class='short_general_text'>
             <h3 style='text-align: right; color: #EEEEEE; padding-bottom: 2%'>Марков Сергей Леонидович</h3>
@@ -124,13 +124,78 @@ var generals_html = `
     </div>
     <div class='short_general_div'>
         <div class='short_general_photo'>
-            <img align='right' id='short_general_photo' src='https://upload.wikimedia.org/wikipedia/commons/3/3e/Pyotr_Nikolayevich_Krasnov.jpg'>
+            <img align='right' id='short_general_photo' src='./assets/img/generals/Krasnov.jpg'>
         </div>
         <div class='short_general_text'>
             <h3 style='text-align: right; color: #EEEEEE; padding-bottom: 2%'>Краснов Пётр Николаевич</h3>
             <p>1 параграф о Краснове</p>
             <p>2 параграф о нем же</p>
         </div>
+    </div>
+</section>
+<section>
+<h2 style="text-align: center">Красные Генералы<h2>
+</section>
+<section>
+    <h3 style="color: #eeeeee91"> Главнокомандующие</h3>
+    <h2> Егоров Александр Ильич</h2>
+    <div class='general_div'>
+        <div class='general_photo'>
+            <img align='right' id='general_photo' src='./assets/img/generals/Egorov.jpg'>
+        </div>
+        <div class='general_text'>
+            <p>Родился 1883 близ Самары в Бузулуке. Добровольно вступил в РИА. Во время первой мировой уже имел звание капитана, был несколько раз ранен. к 1917 имел звание подполковника, в те годы(и ранее с 1903) был эссером в 1917 вступил в партию официально. В 1918 был одним из создателей РККА.
+            В 1919 году по командовал 10 и 14 армиями на южном фронте гражданской войны, эти соединения были необученными не регулярными частями. Не смотря на весьма скромные успехи он обладал отличными тактическими способностями, что было ценно при большой нехватки профессионалов в РККА.С октября 1919-январь 1920 занимал пост командующего всем Южным фронтом, в 1920 году когда поражение белого движение уже было неизбежно его отправили на Советско-Польскую войну.
+            В 1935 становиться Маршалом СССР
+            В 1938 Оговорил себя и был осуждён за шпионаж в пользу польши и заговору, был расстрелян
+            в 1956 реабилитирован.
+            </p>
+        </div>
+    </div>
+    <h2> Фрунзе Михаил Васильевич</h2>
+    <div class='general_div'>
+        <div class='general_photo'>
+            <img align='right' id='general_photo' src='./assets/img/generals/Frunze.jpg'>
+        </div>
+        <div class='general_text'>
+            <p>Родился в 1885 году в Бишкеке. Был отличным учеником, поступил в столичный университет на экономиста. В институте и сложились его революционные левые взгляды.В 1904 вступил в РСДРП.Во время революции 1905 активно участвовал в свержении самодержавия, был ранен во время“Кровавого воскресенья”. Участвовал в вооруженном восстании в Москве на Пресне. На IV съезде РСДРП познакомился с В.И.Лениным.Участвовал и в террористической деятельности. В 1907 году был приговорён к смертной казни, однако приговор был смягчён, и его отправили на каторгу. В 1916 году сбежал, и добрался до европейской части России. Там он попал на фронт, активно агитировал солдат. В 1917 активно участвовал в революции, и руководил Минской ячейкой РСДРП. После октября Фрунзе стал активным строителем нового советского гос-ва.Он не имел профессионального военного образования, однако компенсировал это собрав вокруг себя целую плеяду военспецов. Также крайне активно изучал военную литературу. В 1919 успешно разгромил Колчака и выбил его в Сибирь, также очистил Среднюю азию. В 1920 Году Положение ВСЮР в Крыму было пиковым, а Егоров был нужен для противостояния полякам, его должность занял Фрунзе. Он успешно разбил и Врангеля. 
+            В 1925 стал главой советской армии, проводил военную реформу.М.В.Фрунзе умер 31 октября 1925. Он был одним из самых талантливых и не жестоким военачальников РККА, держался в стороне от партийной борьбы.
+            </p>
+        </div>
+    </div>
+</section>
+<section>
+    <h3 style="color: #eeeeee91"> Другие Генералы</h3>
+    <div class='short_general_div'>
+        <div class='short_general_photo'>
+            <img align='right' id='short_general_photo' src='./assets/img/generals/Mironov-Filipp-Kuzmich.jpg'>
+        </div>
+        <div class='short_general_text'>
+            <h3 style='text-align: right; color: #EEEEEE; padding-bottom: 2%'>Миронов Филипп Кузьмич</h3>
+            <p>1 параграф о Миронове</p>
+            <p>2 параграф о нем же</p>
+        </div>
+    </div>
+    <div class='short_general_div'>
+        <div class='short_general_photo'>
+            <img align='right' id='short_general_photo' src='./assets/img/generals/Kamenev.jpg'>
+        </div>
+        <div class='short_general_text'>
+            <h3 style='text-align: right; color: #EEEEEE; padding-bottom: 2%'>Каменев Сергей Сергеевич</h3>
+            <p>1 параграф о Каменеве</p>
+            <p>2 параграф о нем же</p>
+        </div>
+    </div>
+    <div class='short_general_div'>
+        <div class='short_general_photo'>
+            <img align='right' id='short_general_photo' src='./assets/img/generals/Budeniy.jpg'>
+        </div>
+        <div class='short_general_text'>
+            <h3 style='text-align: right; color: #EEEEEE; padding-bottom: 2%'>Будённый Семён Михайлович</h3>
+            <p>1 параграф о Маркове</p>
+            <p>2 параграф о нем же</p>
+        </div>
+    </div>
     </div>
 </section>
 `
