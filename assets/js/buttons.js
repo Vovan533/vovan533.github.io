@@ -70,7 +70,7 @@ var generals_html = `
 </section>
 <section>
     <h3 style="color: #eeeeee91"> Главнокомандующие</h3>
-    <h2> Антон Иванович Деникин</h2>
+    <h2 style='color: #FFE4B5;'> Антон Иванович Деникин</h2>
     <div class='general_div'>
         <div class='general_photo'>
             <img align='right' id='general_photo' src='./assets/img/generals/Denikin.jpg'>
@@ -79,7 +79,7 @@ var generals_html = `
             <p>Родился в 1872 под Варшавой, в семье разночинцев(что отличало его от других членов высшего командного состава белой армии). В 1892 поступил в Киевское пехотное юнкерское училище получил звание лейтенанта. До Р-Я войны служил в разных частях штабным офицером. Во время Р-Я войны воевал в Маньчжурии, дослужился до звания полковника. В 1914 году в звании Генерал-лейтенанта принял командования “Железной дивизии”. Действовал крайне удачно. В 1916 году спасал Румынию от разгрома. Революцию 1917 года поддержал, однако был разочарован новыми властями России, после провала заговора Корнилова был арестова, но смог бежать во время октябрьской революции, и примкнул к Корнилову, после его смерти возглавил добровольческую армию. В 1919 году добровольческая армия Корнилова и Донские силы объединились в ВСЮР. Благодаря его(и других белых генералов) умелому командованию удалось добиться максимального приближения к Москве. Однако несмотря на военную гениальность, он не сумел удержать тыл стабильным, что привело к разгрому интендантства и отступление назад к Дону. Разлагающаяся армия, популярность Деникина, а также провал эвакуации из Новороссийска, привели к тому, что Деникин передал ВСЮР Врангелю, а сам Эмигрировал в Англию. Помогал эмигрантам, и один из немногих деятелей белого движения, кто наотрез отказался помогать нацистам, во времена ВОВ.</p>
         </div>
     </div>
-    <h2> Врангель Пётр Николаевич</h2>
+    <h2 style='color: #FFE4B5;'> Врангель Пётр Николаевич</h2>
     <div class='general_div'>
         <div class='general_photo'>
             <img align='right' id='general_photo' src='https://upload.wikimedia.org/wikipedia/commons/e/e3/Pyotr_Wrangel%2C_portrait_medium.jpg'>
@@ -97,7 +97,7 @@ var generals_html = `
             <img align='right' id='short_general_photo' src='./assets/img/generals/PolcovnikDrozdovskiy.jpg'>
         </div>
         <div class='short_general_text'>
-            <h3 style='text-align: right; color: #EEEEEE; padding-bottom: 2%'>Дроздовский Михаил Гордеевич</h3>
+            <h3 style='text-align: right; padding-bottom: 2%'>Дроздовский Михаил Гордеевич</h3>
             <p>1 параграф о дроздовском</p>
             <p>2 параграф о нем же</p>
         </div>
@@ -107,7 +107,7 @@ var generals_html = `
             <img align='right' id='short_general_photo' src='./assets/img/generals/Bogaevsky.jpg'>
         </div>
         <div class='short_general_text'>
-            <h3 style='text-align: right; color: #EEEEEE; padding-bottom: 2%'>Богаевский Африкан Петрович</h3>
+            <h3 style='text-align: right; padding-bottom: 2%'>Богаевский Африкан Петрович</h3>
             <p>1 параграф о богаевском</p>
             <p>2 параграф о нем же</p>
         </div>
@@ -117,7 +117,7 @@ var generals_html = `
             <img align='right' id='short_general_photo' src='./assets/img/generals/Markov.jpg'>
         </div>
         <div class='short_general_text'>
-            <h3 style='text-align: right; color: #EEEEEE; padding-bottom: 2%'>Марков Сергей Леонидович</h3>
+            <h3 style='text-align: right; padding-bottom: 2%'>Марков Сергей Леонидович</h3>
             <p>1 параграф о Маркове</p>
             <p>2 параграф о нем же</p>
         </div>
@@ -127,7 +127,7 @@ var generals_html = `
             <img align='right' id='short_general_photo' src='./assets/img/generals/Krasnov.jpg'>
         </div>
         <div class='short_general_text'>
-            <h3 style='text-align: right; color: #EEEEEE; padding-bottom: 2%'>Краснов Пётр Николаевич</h3>
+            <h3 style='text-align: right; padding-bottom: 2%'>Краснов Пётр Николаевич</h3>
             <p>1 параграф о Краснове</p>
             <p>2 параграф о нем же</p>
         </div>
@@ -138,7 +138,7 @@ var generals_html = `
 </section>
 <section>
     <h3 style="color: #eeeeee91"> Главнокомандующие</h3>
-    <h2> Егоров Александр Ильич</h2>
+    <h2 style='color: #FFE4B5;'> Егоров Александр Ильич</h2>
     <div class='general_div'>
         <div class='general_photo'>
             <img align='right' id='general_photo' src='./assets/img/generals/Egorov.jpg'>
@@ -152,7 +152,7 @@ var generals_html = `
             </p>
         </div>
     </div>
-    <h2> Фрунзе Михаил Васильевич</h2>
+    <h2 style='color: #FFE4B5;'> Фрунзе Михаил Васильевич</h2>
     <div class='general_div'>
         <div class='general_photo'>
             <img align='right' id='general_photo' src='./assets/img/generals/Frunze.jpg'>
@@ -171,7 +171,7 @@ var generals_html = `
             <img align='right' id='short_general_photo' src='./assets/img/generals/Mironov-Filipp-Kuzmich.jpg'>
         </div>
         <div class='short_general_text'>
-            <h3 style='text-align: right; color: #EEEEEE; padding-bottom: 2%'>Миронов Филипп Кузьмич</h3>
+            <h3 style='text-align: right; padding-bottom: 2%'>Миронов Филипп Кузьмич</h3>
             <p>1 параграф о Миронове</p>
             <p>2 параграф о нем же</p>
         </div>
@@ -181,7 +181,7 @@ var generals_html = `
             <img align='right' id='short_general_photo' src='./assets/img/generals/Kamenev.jpg'>
         </div>
         <div class='short_general_text'>
-            <h3 style='text-align: right; color: #EEEEEE; padding-bottom: 2%'>Каменев Сергей Сергеевич</h3>
+            <h3 style='text-align: right; padding-bottom: 2%'>Каменев Сергей Сергеевич</h3>
             <p>1 параграф о Каменеве</p>
             <p>2 параграф о нем же</p>
         </div>
@@ -191,7 +191,7 @@ var generals_html = `
             <img align='right' id='short_general_photo' src='./assets/img/generals/Budeniy.jpg'>
         </div>
         <div class='short_general_text'>
-            <h3 style='text-align: right; color: #EEEEEE; padding-bottom: 2%'>Будённый Семён Михайлович</h3>
+            <h3 style='text-align: right; padding-bottom: 2%'>Будённый Семён Михайлович</h3>
             <p>1 параграф о Маркове</p>
             <p>2 параграф о нем же</p>
         </div>
