@@ -179,15 +179,16 @@ section {
 }
 
 section h2{
-  font-size: 2.5vw;
+  font-size: 2vw;
 }
 section h3{
-  font-size: 2vw;
+  font-size: 1.6vw;
   color: #FFE4B5;
   padding-bottom: 2%;
 }
 
 section p{
+  font-size: 1.4vw;
   max-width: 95%;
   overflow: hidden;
   display: -webkit-box;
