@@ -316,18 +316,22 @@ section a:hover {
 
 .history_action {
   align-self: flex-start;
+  margin-right: auto;
   margin: 1.5%;
   order: 1;
   flex-grow: 2;
   height: 100%;
+  max-width: 45%;
 }
 
 .literature_action {
   margin: 1.5%;
-  align-self: flex-end;
+  margin-left: auto;
+  align-self: flex-start;
   order: 2;
   flex-grow: 2;
   height: 100%;
+  max-width: 45%;
 }
 
 /* Interactive map styles */
