@@ -317,24 +317,43 @@ section a:hover {
   line-height: 1.2;
 }
 
+.action_section {
+  width: 120%;
+  margin-left: -10%;
+}
+
 .history_action {
   align-self: flex-start;
   margin-right: auto;
   margin: 1.5%;
   order: 1;
-  flex-grow: 2;
+  flex-grow: 1;
   height: 100%;
-  max-width: 45%;
+  max-width: 25%;
+}
+
+.map_action {
+  align-self: center;
+  flex-grow: 2;
+  order: 2;
+  height: 100%;
+  display: flex;
+}
+
+.action_map {
+  align-self: center;
+  text-align: center;
+  width: 100%;
 }
 
 .literature_action {
   margin: 1.5%;
   margin-left: auto;
   align-self: flex-start;
-  order: 2;
-  flex-grow: 2;
+  order: 3;
+  flex-grow: 1;
   height: 100%;
-  max-width: 45%;
+  max-width: 25%;
 }
 
 /* Interactive map styles */
