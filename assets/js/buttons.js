@@ -54,8 +54,9 @@ var info_html = `
     <p>Не очень много текста о сайте...</p>
     <p>Не очень много текста о сайте...</p>
 </section>
-<section id='copirights'>
-    <h2> Источники</h2>
+<section id='copyrights'>
+    <h2>Источники</h2>
+    <h3>Тексты</h3>
     <p>РВИО:  Официальный сайт .- Москва - URL :  http://100.histrf.ru/commanders/frunze-mikhail-vasilevich (дата обращения 12.02.2022)</p>
     <p>РВИО:  Официальный сайт .- Москва - URL : http://100.histrf.ru/commanders/denikin-anton-ivanovich (дата обращения 12.01.2022)</p>
     <p>РВИО:  Официальный сайт .- Москва - URL : http://100.histrf.ru/commanders/vrangel-petr-nikolaevich (дата обращения 21.12.2021)</p>
@@ -64,6 +65,9 @@ var info_html = `
     <p>БРЭ : Официальный сайт .- Москва - URL : https://bigenc.ru/military_science/text/1911482 (дата обращения 09.02.2022)</p>
     <p>ЭНЦИКЛОПЕДИЯ Волгоградской области : Официальный сайт .- URL : http://nlr.ru/res/epubl/rue/texts/volgograd/RUS/enciklopediya/1/O.html#4 (дата обращения 01.01.2022)</p>
     <p>Демешина Е.И., Хмелевский К.А.      :  История донского края. /Учебное пособие для учащихся 9 - 10-х классов средней школы' - Ростов-на-Дону: Ростовское книжное издательство, 1983</p>
+    <h3>Изображения</h3>
+    <p>Фон 1 - https://cdnb.artstation.com/p/assets/images/images/020/690/295/large/pasha-shimanski-.jpg?1568786045</p>
+    <p>Фон 2 - https://muzey-tihoreck.ru/images/phocagallery/2021/2021-05-25/16.jpg</p>
 </section>
 `
 

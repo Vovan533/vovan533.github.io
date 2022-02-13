@@ -512,3 +512,8 @@ body.sticky-header header h1 {
   height: 5vh;
   margin-top: 10vh;
 }
+
+#copyrights p{
+  font-size: 1.2vw;
+  margin-bottom: 1%;
+}
