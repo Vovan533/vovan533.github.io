@@ -96,7 +96,7 @@ header h1 {
   font-size: 5vh;
   color: #EEEEEE;
   -webkit-text-stroke: 1px rgba(0,0,0,.5);
-  text-shadow: 1px 1px 5px #000;
+  text-shadow: 1px 1px 15px #000;
   line-height: 230px;
   font-weight: 400;
   -moz-transition: all 0.3s ease;
@@ -330,10 +330,11 @@ section a:hover {
   flex-grow: 1;
   height: 100%;
   max-width: 25%;
+  text-align: left;
 }
 
 .map_action {
-  align-self: center;
+  align-self: flex-start;
   flex-grow: 2;
   order: 2;
   height: 100%;
@@ -341,9 +342,14 @@ section a:hover {
 }
 
 .action_map {
-  align-self: center;
+  align-self: flex-start;
   text-align: center;
-  width: 100%;
+  margin-top: 10%;
+  margin-left: 1%;
+  margin-right: 3%;
+  align-self: top;
+  width: 96%;
+  height: auto;
 }
 
 .literature_action {
@@ -354,6 +360,19 @@ section a:hover {
   flex-grow: 1;
   height: 100%;
   max-width: 25%;
+  text-align: left;
+}
+
+.literature_action p {
+  color: #EEEEEE;
+  line-height: 1;
+  font-size: 1.2vw;
+  margin-bottom: 1%;
+}
+
+.literature_action h3 {
+  color: #FFE4B5;
+  font-size: 1vw;
 }
 
 /* Interactive map styles */
@@ -363,7 +382,7 @@ section a:hover {
 }
 
 .map_section h2{
-  margin-bottom: -5%;
+  margin-bottom: -0%;
 }
 
 .interactive_map {
@@ -397,7 +416,7 @@ section a:hover {
 }
 
 #map1918 {
-  background: url("../img/map_template_clouds.png") center;
+  background: url("../img/1918map.jpg") center;
   background-size: contain;
   background-repeat: no-repeat;
   width: 100%;
@@ -405,7 +424,7 @@ section a:hover {
   padding-top: 46.64%;
 }
 #map1919 {
-  background: url("../img/map_template_clouds.png") center;
+  background: url("../img/map1919.jpg") center;
   background-size: contain;
   background-repeat: no-repeat;
   width: 100%;
@@ -413,7 +432,7 @@ section a:hover {
   padding-top: 46.64%;
 }
 #map1920 {
-  background: url("../img/map_template_clouds.png") center;
+  background: url("../img/1920map.jpg") center;
   background-size: contain;
   background-repeat: no-repeat;
   width: 100%;
@@ -425,7 +444,7 @@ section a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: -6%;
+  margin-top: -0%;
 }
 
 .map_years_box a{
