@@ -71,6 +71,17 @@ var info_html = `
 </section>
 `
 
+var maps_html = `
+<section id='about_us'>
+    <h2> Карты</h2>
+    <p>Тут будут карты (но это не точно)</p>
+</section>
+<section id='copyrights'>
+    <h2> Карты 2: Возвращение</h2>
+    <p>Тут тоже будут карты (но это тоже не точно)</p>
+</section>
+`
+
 var generals_html = `
 <section>
 <h2 style="text-align: center">Белые Генералы<h2>
@@ -402,6 +413,17 @@ function load_generals() {
     f_button.classList.remove("header_button")
 };
 
+function load_maps() {
+    document.getElementById("wr").innerHTML = start_block_html + maps_html;
+    document.getElementById("scrool_to").scrollIntoView();
+    button = document.getElementsByClassName("header_button_active")[0]
+    button.classList.add("header_button")
+    button.classList.remove("header_button_active")
+    f_button = document.getElementById("maps")
+    f_button.classList.add("header_button_active")
+    f_button.classList.remove("header_button")
+};
+
 function load_main() {
     old_c = document.getElementById("wr");
     new_c = document.createElement("div");
@@ -447,6 +469,8 @@ document.addEventListener('click', function (e) {
         load_actions();
     } else if (e.target.id == 'generals') {
         load_generals();
+    } else if (e.target.id == 'maps') {
+        load_maps();
     }
     // section href buttons
     else if (e.target.id == 'actions_href') {
